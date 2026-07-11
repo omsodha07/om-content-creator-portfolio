@@ -1,0 +1,118 @@
+/* ===========================
+   General
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#121212;
+    color:#F5F5F5;
+    padding:40px 8%;
+}
+
+/* ===========================
+   Back Button
+=========================== */
+
+.back-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#D4AF37;
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:30px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    color:#fff;
+}
+
+/* ===========================
+   Page Title
+=========================== */
+
+.page-title{
+    text-align:center;
+    font-size:42px;
+    color:#D4AF37;
+    margin-bottom:10px;
+}
+
+.page-subtitle{
+    text-align:center;
+    color:#BDBDBD;
+    font-size:18px;
+    margin-bottom:50px;
+}
+
+/* ===========================
+   Reel Grid
+=========================== */
+
+.reel-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+/* ===========================
+   Reel Card
+=========================== */
+
+.reel-card{
+    background:#1E1E1E;
+    border:2px solid transparent;
+    border-radius:18px;
+    overflow:hidden;
+    transition:.4s;
+}
+
+.reel-card:hover{
+    border-color:#D4AF37;
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(212,175,55,.25);
+}
+
+/* ===========================
+   Google Drive Video
+=========================== */
+
+.reel-card iframe{
+    width:100%;
+    height:560px;
+    border:none;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media(max-width:768px){
+
+    body{
+        padding:25px;
+    }
+
+    .page-title{
+        font-size:32px;
+    }
+
+    .page-subtitle{
+        font-size:16px;
+    }
+
+    .reel-container{
+        grid-template-columns:1fr;
+    }
+
+    .reel-card iframe{
+        height:480px;
+    }
+
+}
