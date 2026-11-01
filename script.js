@@ -86,7 +86,7 @@ window.addEventListener("scroll", () => {
 // https://www.emailjs.com/docs/tutorial/creating-contact-form/
 
 const EMAILJS_PUBLIC_KEY = "pkHrUM7IfzGltk2fj";
-const EMAILJS_SERVICE_ID = "service_q4noejk";
+const EMAILJS_SERVICE_ID = "service_mt3yauu";
 const EMAILJS_TEMPLATE_ID = "template_d4c9lvl";
 
 
